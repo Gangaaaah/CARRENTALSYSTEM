@@ -1,0 +1,115 @@
+<!DOCTYPE<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/premium-vector/car-rental-service-rent-vehicle-automobile-cartoon-illustration_212005-189.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Payment Page</h2>
+        <form id="Make Payment" action="summaryretrievee.php" method="post">
+            <label for="paymentMethod">Select Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="payNow">Pay Later</option>
+                <option value="cardPayment">Card Payment</option>
+                <option value="upiPayment">UPI Payment</option>
+            </select>
+
+            <div id="cardPaymentDetails" style="display: none;">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="text" id="expirationDate" name="expirationDate" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <div id="upiPaymentDetails" style="display: none;">
+                <label for="upiID">UPI ID:</label>
+                <input type="text" id="upiID" name="upiID" required>
+            </div>
+
+            <input type="submit" value="Make Payment">
+        </form>
+    </div>
+
+    <script>
+        const paymentMethodSelect = document.getElementById("paymentMethod");
+        const cardPaymentDetails = document.getElementById("cardPaymentDetails");
+        const upiPaymentDetails = document.getElementById("upiPaymentDetails");
+
+        paymentMethodSelect.addEventListener("change", function() {
+            if (paymentMethodSelect.value === "payNow") {
+                cardPaymentDetails.style.display = "none";
+                upiPaymentDetails.style.display = "none";
+            } else if (paymentMethodSelect.value === "cardPayment") {
+                cardPaymentDetails.style.display = "block";
+                upiPaymentDetails.style.display = "none";
+            } else if (paymentMethodSelect.value === "upiPayment") {
+                cardPaymentDetails.style.display = "none";
+                upiPaymentDetails.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>

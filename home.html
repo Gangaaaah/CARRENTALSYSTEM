@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Rental Portal - GoRoamRentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/premium-vector/rent-car-couple-rents-car-from-rental-agent-cartoon-character-people-city-landscape-illustration-agent-auto-rent-car-rental_80590-8572.jpg') no-repeat center center fixed, linear-gradient(to bottom, #00c2ff, #0082e6);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            text-align: center; /* Center the navbar text */
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #ff6600;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+    background-color: #333; /* Background color for the navbar */
+    padding: 10px; /* Add padding around the links */
+    border-radius: 5px; /* Rounded corners for the navbar */
+    display: flex; /* Use flexbox to align links horizontally */
+    justify-content: space-around; /* Distribute links evenly */
+}
+
+.navbar a {
+    color: white; /* Text color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 16px; /* Add padding to the links */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Change background color on hover */
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="index.html">Login</a>
+    </div>
+    <div class="container">
+        <h2> GoRoam Kochi</h2>
+        <form id="bookingForm" action="booknowwwww.php" method="get">
+            <label for="city">Select City in Kerala:</label>
+            <select id="city" name="city" required>
+                <option value="">Select</option>
+                <option value="Thevara">Thevara</option>
+                <option value="Kadavanthra">Kadavanthra</option>
+                <option value="Edapally">Edapally</option>
+                <option value="Vyttila">Vyttila</option>
+                <option value="Kochi Thevara">Kochi Thevara</option>
+            </select>
+
+            <label for="fromDate">From Date:</label>
+            <input type="date" id="fromDate" name="fromDate" required>
+
+            <label for="toDate">To Date:</label>
+            <input type="date" id="toDate" name="toDate" required>
+
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+    <script>
+        // Function to handle form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form values
+            var city = document.getElementById('city').value;
+            var fromDate = document.getElementById('fromDate').value;
+            var toDate = document.getElementById('toDate').value;
+
+            // Construct the URL with parameters
+            var url = 'booknowwwww.php?city=' + encodeURIComponent(city) + '&fromDate=' + fromDate + '&toDate=' + toDate;
+
+            // Redirect to the next page with the constructed URL
+            window.location.href = url;
+        });
+    </script>
+</body>
+</html>

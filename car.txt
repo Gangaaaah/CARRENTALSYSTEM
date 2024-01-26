@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About GoRoamRentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBERDw8PDxEPDw8PDw8PDw8PDxEPDw8PGBQZGRgUGBgcITEnHB4rHxgYJjgmKy8xNjU1HCRDQDs2Py42NTEBDAwMEA8QHRERGjEhISExNDExMT81NDE0MTExNTExNDExMTQ/NDQ0NDQxNDQxMTExNDQxNDQxMTE0NDE0MTQxNP/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAABAgADBAUGB//EAD8QAAIBAwEFBQQGCQMFAAAAAAABAgMREgQFEyExUUFSYXGRBiIygUJykqGxwRQVI0NTgsLR8GKi0gcWJDOD/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECAwQFBv/EADURAQABAwIDBAcGBwAAAAAAAAABAgMRBCESMVEFQWGRE6GxwdHh8BQiQoHi8RUyUnGCktL/2gAMAwEAAhEDEQA/APl4bESGSMgEhkiJBSACQyQUhkgFSGSGSCkAthkgpDKICqJMR1EZRARRCojpBxAXEOI6QVEITEKiPiMogVqIVEsURlECtRCojqIVEBFEZRHURlACrENi1QGUAKMA4F+AcAKMSYl+IcQM+IcS/EmIGfEOJfiHADPiTE0YEwAowJgaMSYgeYsMkRIiQVEhkiJDpARIZIiQUgIkMkRIZIAJDpESGSACQUgpDpBCpBUR0gpAKojJDJBUQExGUR1EKiAiiFRLFEdRAqUR1AdRGUQEUQqJYojKIFaiFRLFEKiAiiFRHUQpAJiTEssGwFWBMS2xAKsQ4FgAExBiWAASxLDi2A8qkFIiQ6QVEhkiJBSAiQyREixIAJDJESHSCAkMojKIyiAqQ6QVEZRAVRGURlEdRARRGUR1EKiAqiFRHSGSARRGURkgpABRGSIQCJDJEQQJYJEQCBIQAkIQCEIQAEIACADcFwIQW5LgeZSGSAkMgqJDpASLEgIkMkRIdIIiiOkRDIApBSIhkBEh0gIdARIZIVBTAZIZCphuAwSmrWjBXfyS5s5jramtOSpyjSpx+lz49L9rDKIdkJ5zXQr04py1MpSk7Rildtdr5mGFbUSdo1Kz42unK33DdYijrPl83sQ5HIWzKjStqJOTXbBNX9TVQ2RW4LeUp+dKK/BE36fXkyxa/qn/AFj/AKb0Ex6rZkocJPCWGalSlPjz7H5GLeV6DjJtVqd1ldviuj7Y+aZKas5jotyzNFNNWYmKs4nfunHfifd0md3ZCV6mSpyg+O7qwjUpT6wfZL/UneL8YsmRk0rAleRMgLLkuV5EyAsuC5XkTIB2wZCZAuA9wXFuS4DXBcW5LgefQUBMiYVYixFKYykBchkytSIpBF6YyZQpDKQFyYUypSCpAXJhUinImQF6kHIolGUopwnQinGq3KpUcMXTV8eXGUnwiu18Ct1Glx+Jc1Ftrx5mq5dijGe926TRV6nPDMRFOM5z39P3a8zJS1kpL4J3u+GEko+bsSlXkuqX3myjtBrqjVOoifB6VrsiqnOZicxjly8Y3c2c4ub3s8bfFksZS8Euxf54l8NpUIpRjLguSjGSSXodWG1Oqv52ZZHWwfOEH5xj/Yv2jwT+CVz+L1fN4zW1JVpzmrJR4QUpJe4uVur7Sui3GyXGS6O/E93F0ZPjCPlG6X3Dz0UJ2UKTjKcpQg0qs5Oa5xjGN+Kvy7O1FjUTVtTTn8/k13eyaLMcV29wx40/qeVVCtOTlCdSKkk0t41GPDjwTN1DZuoTTc5tN805St58Tt6PZdGWV51JOLtKCjGPPk+3/Eb4aOnHglJLxnNL52ZjOpxOKqcFPZHHTFVu9FUT38Mx73ntovChNt3bcIJvtlkZKexqmoe9VRwg0uXFZrnd3SPQ6zRp2iqSnb3ksM43Xbxuc2j7MyU5TcVVjN33coNYeHia4vZzziZnOfKMOyvsyaItVTiumKcTEziI3qqmrbeYzOMR/fuXTxWmhpnOFStRnOUVGcHLdyxajZNvhLJ/zMx0oyg7SaV7Wg38K7Xf8j0ej9nFD3o0oU7ri1HHgV7U2JaKqQlGS4qThJStJdjtyYm9cxt9eWxb7P0U3MVTz7omcZ677+c4cmpTlFJte7LlJNNN9BMhtbtGemounut8pL9plfGEexriry4X4cvmY6FdSjGUeTVzptVzXTmYeNrtPRYvTRbqzEeceEtWQMirMmZtcS3ImRVmDIC3ImRVkTIC3IGRXkDIC3ImRVkTIDjqEujGVOXRnYjpkPHTIK4qpy7rGVOfdZ246ZFsdMgmXCVKfdYVRn3Zeh6KGmRdDTLoUy8yqFTuS9BlQqdyXoeojpl0LY6ZdAPJrT1O5L0D+jVO5L0PYx0y6FsdJHoB4rcVO5L0KtTlBe8mm72T7ep7p6KPQ8Tt6mpaytDfUqcqeEY06ucVju4yupKLiruT5tGNWcbc2y1w8ccfItTVRcKdOKcVDJ8op5Sab5c3w7X6FKMunrXaXDi0rppnp6Xs7OUVPeQSdONX3nKNoyTdvPg+Rx127lf3seD6DT6rSWKIoiqIzv3z54jm5NGnk+drJu97LgBI6r2LKMct5TaWXHKSXCKk+cejXr1KdZs6VFZTfDOVO+Sn765o01W643mHoWdbpq6oiLkZnlHJljEvjC39kVOvTja81FWXGXuu/auZpo63Sr4q1M08My9Om5bjnVC10/2StJwlVyjGol8LVrJdG05O/wDpOxs6gqVLTre6mnCi60pzoztOknbF0r296VveOfDaujiv/bfqlik/Vi6jbEJ03Cikqcvikndy8OHI6bd70VGMPG1nZv2zU+k9LiNtsRtEdN/dKaPUTpSlg1K8ryU1dtdnLn2/NsO19TqNRDBTVJLjJxg0/wDc7JXOaqyurJXuviimXVtD+kaWnGSnGT1OnqZKzVTTylOlLFX4uM7N375dPT6Sqaqt/Z5NHatf2OzRasYpidon8WI5znrOemd9pgPZ/wBpNRpY6jSztUdsqc6iyxfLJLy++3Ti2o9o9XK961RLpTtBf7Ujj62vCpqnUppKF6tGNvpQgkoy+asLKLLepxXiOSaC7x2OKverOJmec4+vz5zmVmp1tSfxzqS+tOUvxOn7O7W3FRxquUqNVLer4mpW4TXiuXkcF8+pdHmvNGE7Q3RmurE8nX1uqcp1dRFQema1bxl8Ut3ThGEWuy+8pvxx8DBsenKVH3YtxU5pNLs5r8SnRxTpTqVYVa1DJZ0qdTdt4qKyXO9nKF1ZefA9n7N6GD0qqU4OFOdSpKEZSzcYqWKV+34T0IjEYfL3K+Kqqqe+c+9wNxPuS9Cbifcl6Hs3oF0EegXQrW8fuZ92XoTcz7rPWvQroI9EugHlN1Puv0Ju591nqXol0EejXQDzG7n3WTCXdZ6V6NCPRroB5zCXRkxfRnoHpF0F/RF0A5cZFsZGRVB4zA2RZZGRjjMeNQDbGRdGRhjULI1AN8ZFkZmCNUWvr4QV55fyxbA68ZlsZnk6vtLCPwQnL6zxMlT2nq/QhCPneTBh7pTPnPthR/8APqyVvfhRkk7XdoKN19n8Rp+0Gpl+8x+rGKMOp1kqnGrNza5ZvK3lcMo8WSnCUXdKSfZzfH1Z0f1/r4uK3iaiko50aMvdXBK7icqtVS+BuL6LkKtbVX05fPiT73h62cRa78+qfbh2v+69XaUZRoSycm/2cou8ouLd4SXGzauV7Q9o9RqIRp1Y01FVHUulUyyatzlJ8PA5i2lV6xf1op/iWLab7adJ/wDzh/Ymaunr+TKmizPOuY/x+FUpVk+FpPj2Ju3pZmnTbT1NKOFOq4xveyppu/m4XKJ7SjJYyowte9ldJfK4Iaqh9KlFeSk/6yxM9PZ8WM26M/zx5VfCfa2y27rOX6RV+V1/QNpNW5xtJttPi328efLxMEtRR7KdL5xqf8i2lrKa4KNKH8s2a7kTVTMY9jq0fBavU3PSUxjwq6THfTEOhGpwk+ik/SJvjSkqENTNzUJQlRowhUxnOEP2lSUF2JYS8210Rx562ljKMXlJwcOEbJeN2atkRqVa2kV5Sp0N7SlHspRmpXnbuvLi+yyvzRjYommJy29p6im9XTwznET6/wBjw0dC9J6OdSrBqrJqqkpQksY2dkuwk6a+lL77/gY1RrSxoaanUnhG091FzSm+MlklZdnHwOjo/YnX1rOcY00+2tVyl9mN/wAjKu1FU5mWqxrqrFvgopjrmfg59XU049qb8GjFPaHH3fv4Hv8AS/8ATSEIqepryl4UYRgvJuV3+B06HsZsynZuhKo+V6lWck/kmkWLVEdzCrXaiqc8b5rsrUWcYznGNKG/yi+F41IKLa6tYxdvA+geyeo1MqMYVNLudPGF6NVz96om7r3OfFO9ztabZGz6TUoaTTRkuMZOnGck+qcrm2vqYvl+BscbO5FcpgqVUUzqAWOQsplEqhW6oGhyEcjO6ojqgaHIRzKHUEdQIvc0LmjO6gu8CvMqoMpmFVB1MK3RmOqhhVQZTA3KqOqphVQdVANyqjqsYFUHUwL6lGnP4oL5cDJPZFF8nOPk7lqqDqQGCWw19Go/5olM9hT7Jwl53R11MZTA89U2DV7sX5TX5lEth11+7fylB/meqVQKmB5F7Gr/AMKfomL+qK38Kp9lnslMZTBu8X+qa38Kr9iX9gLZNZ/uqv2JL8j2yqBzC7vGR2FqHypT+bhH8WaKfszqHzUIfXqL+lM9ZvA7wG7z9H2Rlwc68Y9VCLl97aOtovZfTxs6lSrNdE4wT9Ff7zXvh3X+4Ew7ul1VOnCMIQjGEVaKRoe07L4vklyPM78O+8QRD0b2m+yT9EUz19/PryODvvEm+Cuy9X4iy1Rx3WJvwxl1JakrlqPE52+A6oRvlqCuWoMEqokqgG96gV1/E57qA3gG51gOsYXUA6gG11hd8YnUBvAOEphUihSGUgq9SGUzMpDZAaVUHVQyKQymBrUxlMyKQymBsVQZTMSqDKoBtVQZTMSmMpgbFUGVQxqoFVANiqBVQxqoHMDZvA7wx5hzA2bwm9Mm9JvANu9JvDHvAbwK2KoNvDEqhN4Bs3gN6ZMyZhGt1Qb0y5gzA174G9MuYMgNTqFbqFOQrmBc6hHMocwOYF7qC7wqyEcgNGYMyjIGQHJuMmKEBrhUisNwLcgqRVcNwLMhlIqyCpAWqQykUphyAuUgqRRkHIDQphUyhSGyAuzDkUKQVIC/MOZRkHIC7MORRkTIC/IGZTkTIC/IORnyDkBfkTIoyJkBfkTIoyJkBfkTIz5EyAvyJkUZEyAuzBmVZAyAtzA5FeQLgWXBkJcGQGC4SEAYhCAS4bkIBLhuQgVLhuQgByIpEIEMmS5CAG5MgkAmQciECjkG4SBAuS4SAC4ciEAlyZEIBMiZEIALkuEgAuDIhAJkDIhAJcFyECpcFwkA/9k=') no-repeat center center fixed, linear-gradient(to bottom, #00c2ff, #0082e6);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        .container {
+          background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+           color: #000;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #000;
+            font-size: 20px;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .branch-box {
+            border: 2px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .contact-box {
+            border: 2px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .contact {
+            color: #000;/* Contact symbol color */
+        }
+
+        .gmail {
+            color: #000; /* Contact symbol color */
+        }
+
+        .location {
+            color: #000; /* Contact symbol color */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="file:///C:/xampp/htdocs/final/home.html">Home</a>
+        <a href="file:///C:/xampp/htdocs/final/aboutus.html">About Us</a>
+        <a href="safety.html">Safety</a>
+        
+         <a href="file:///C:/xampp/htdocs/final/loginn.html">Login</a>
+    </div>
+    <div class="container">
+        <h2>About GoRoamRentals</h2>
+        <p>
+            GoRoamRentals - Your Trusted Partner for Hassle-Free Travel & Affordable Travel in Kerala
+            Kerala is a beautiful state located in the southwestern region of India, famous for its palm-lined beaches, serene backwaters, and rolling hills. With a plethora of attractions to visit and things to do, it is no wonder that tourists flock to this paradise on earth year after year. To make their travels more comfortable and convenient, GoRoamRentals Rent a Car Service is now available in various locations across Kerala.
+
+            Our company is a trusted provider of rental cars in Kerala, offering a range of vehicles to choose from, including compact cars, sedans, SUVs, and luxury cars. Whether you are traveling with a small group of friends or a large family, we have the right vehicle for your needs. Our cars are well-maintained, clean, and equipped with the latest technology, ensuring a smooth and comfortable ride.
+            One of the biggest advantages of choosing GoRoamRentals Rent a Car Service is our unbeatable prices. We understand that traveling can be expensive, and we strive to make it more affordable for everyone. Our rates are competitive, and we offer flexible packages to suit every budget. You can choose from daily, weekly, or monthly rental options, depending on your travel itinerary.
+
+            Another reason why we stand out from other car rental companies in Kerala is our exceptional customer service. Our team of professionals is dedicated to making sure that every aspect of your rental experience is seamless and hassle-free. From booking a car to returning it, we will be there to assist you every step of the way. Whether you have questions or concerns, our team is available 24/7 to help you.
+
+            At GoRoamRentals, we also prioritize safety and security. All of our vehicles are sanitized and properly maintained through routine checks.
+        </p>
+        <div class="branch-box">
+            <p>
+                <strong>Branches:</strong><br>
+                📍 Bangalore, 📍 Hyderabad, 📍 Cochin, 📍 Chennai
+            </p>
+        </div>
+        <div class="contact-box">
+            <p class="contact us">
+                SHERLIN GANGA
+            </p>
+            <p class="gmail">
+                ✉ gangsher2001@gmail.com
+            </p>
+            <p class="location">
+                📍 THEVARA, ERNAKULAM, KERALA
+            </p>
+            <p class="phone">
+                📞 Phone: +918921845655
+            </p>
+        </div>
+        <p>
+            Experience the beauty of Kerala with GoRoamRentals. Discover stunning landscapes, relax on palm-lined beaches, and explore the rich culture and traditions of this beautiful state. Our self-drive rental cars make your journey convenient and affordable. With a wide range of vehicles to choose from, you can explore Kerala at your own pace.
+
+            Whether you're planning a family vacation, a romantic getaway, or a solo adventure, GoRoamRentals has the right car for your needs
+</p>
+</body>
+</html>
